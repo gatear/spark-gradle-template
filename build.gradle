@@ -37,7 +37,7 @@ dependencies {
     compile "org.scala-lang:scala-reflect:"+scalaVersion
     compile "org.scala-lang:scala-compiler:"+scalaVersion
 
-    compile 'org.apache.spark:spark-mllib_2.11:2.1.0'
+    compile 'org.apache.spark:spark-mllib_2.11:2.3.1'
     compile 'org.apache.spark:spark-sql_2.11:2.1.0'
     compile 'org.apache.spark:spark-streaming-flume-assembly_2.11:2.1.0'
     compile 'org.apache.spark:spark-graphx_2.11:2.1.0'
