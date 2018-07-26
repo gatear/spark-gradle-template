@@ -3,7 +3,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '1.2.3'
 }
 
-group 'template.spark'
+group 'spark.statistics'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -51,6 +51,11 @@ dependencies {
 
 task run(type: JavaExec, dependsOn: classes) {
     main = mainClassFile
+
+    if(project.hasProperty('example')){
+        args([example])
+    }
+
     classpath sourceSets.main.runtimeClasspath
     classpath configurations.runtime
 }

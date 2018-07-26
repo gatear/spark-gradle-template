@@ -1,8 +1,13 @@
-firstName,lastName,country,age
-"Bob","Smith","United States",24
-"Alice","Williams","Canada",23
-"Malcolm","Jone","England",22
-"Felix","Brown","USA",23
-"Alex","Cooper","Poland",23
-"Tod","Campbell","United States",22
-"Derek","Ward","Switzerland",25
+firstName,lastName,country,age,salary
+"Bob","Smith","United States",24,1000
+"Alice","Williams","Canada",23,500
+"Malcolm","Jone","England",22,200
+"Malcolm","Jone","England",17,400
+"Malcolm","Jone","England",16,350
+"Felix","Brown","USA",23,300
+"Alex","Cooper","Poland",23,900
+"Tod","Campbell","United States",22,240
+"Derek","Ward","Switzerland",50,5000
+"Derek","Ward","Switzerland",40,4800
+"Derek","Ward","Switzerland",39,4600
+"Derek","Ward","Switzerland",31,4000

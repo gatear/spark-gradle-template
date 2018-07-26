@@ -1,13 +1,12 @@
-package template.spark
+package spark.examples
 
 import org.apache.spark.ml.linalg.{DenseVector, Matrix, SparseVector}
 import org.apache.spark.ml.stat.Correlation
 import org.apache.spark.sql.{Row, RowFactory}
+import spark.SparkEnv
 
-final case class Person(firstName: String, lastName: String, country: String, age: Int)
 
-
-object Main extends SparkEnv {
+object Example2 extends SparkEnv {
 
   //Overloading operators for easy row,vector manipulation
   //https://spark.apache.org/docs/2.2.0/ml-statistics.html
@@ -26,7 +25,7 @@ object Main extends SparkEnv {
   }
 
 
-  def main(args: Array[String]) = {
+  def run() = {
 
     import spark.implicits._
     val version = spark.version
