@@ -46,6 +46,7 @@ dependencies {
     compile 'org.apache.spark:spark-streaming_2.11:2.1.0'
     compile 'org.apache.spark:spark-core_2.11:2.1.0'
 
+    compile 'de.vandermeer:asciitable:0.3.2'
     compile group: 'commons-io', name: 'commons-io', version: '2.5'
 }
 
@@ -53,6 +54,8 @@ task run(type: JavaExec, dependsOn: classes) {
     main = mainClassFile
 
     if(project.hasProperty('example')){
+
+        //TODO Use args in code
         args([example])
     }
 
@@ -81,6 +84,7 @@ shadowJar {
 
 idea {
     module {
+
         // IntelliJ does not know about the standard idiom of provided as used in managing
         // uber/shaded jar dependencies. Make it so!
         scopes.PROVIDED.plus += [ configurations.provided ]
